@@ -8,24 +8,51 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background: #f4f4f4;
+      background: #f7f7f7;
     }
     header {
-      background: #333;
+      background-color: #111;
       color: white;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
     section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .project-card, .skill-card, .contact {
       background: white;
       padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
-    h1, h2, h3 {
-      margin-top: 0;
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+    .skills-grid div {
+      background: #eee;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
     }
     a {
       color: #0077cc;
@@ -34,47 +61,72 @@
     a:hover {
       text-decoration: underline;
     }
-    .project {
-      margin-bottom: 15px;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #555;
-    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Khushal Mali</h1>
-    <p>Data Science | AI | Python Developer</p>
+    <p>Data Science Graduate | Web Developer | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <!-- About -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am a passionate Data Science student with interest in Artificial Intelligence, Computer Vision, and building real-world applications.</p>
+    <p>
+      I'm a B.Sc Data Science graduate passionate about building intelligent systems and clean user experiences.
+      I work on real-time projects like drowsiness detection, and I love applying AI in creative ways.
+    </p>
   </section>
 
-  <section>
+  <!-- Projects -->
+  <section id="projects">
     <h2>Projects</h2>
-    
-    <div class="project">
-      <h3>Driver Drowsiness Detection</h3>
-      <p>AI-based safety system using OpenCV and dlib to alert drivers when signs of drowsiness are detected.</p>
-      <a href="https://github.com/khushal2475/Driver-Monitoring-System" target="_blank">View on GitHub</a>
+    <div class="project-card">
+      <h3>
+        <a href="https://github.com/khushal2475/Driver-Monitoring-System" target="_blank">
+          Driver Drowsiness Detection
+        </a>
+      </h3>
+      <p>
+        AI-based safety system using OpenCV and dlib to alert drivers when signs of drowsiness are detected.
+      </p>
     </div>
-
-    <!-- You can add more projects here -->
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:khushalmali7524@gmail.com">khushalmali7524@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/khushal-mali-8ab383339/" target="_blank">linkedin.com/in/khushal-mali</a></p>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>Python</div>
+      <div>Machine Learning</div>
+      <div>OpenCV</div>
+      <div>HTML/CSS</div>
+      <div>Flask</div>
+      <div>GitHub</div>
+      <div>SQL</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:khushalmali7524@gmail.com">khushalmali7524@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/khushal2475" target="_blank">github.com/khushal2475</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/khushal-mali-8ab383339/" target="_blank">linkedin.com/in/khushal-mali</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Khushal Mali. All rights reserved.</p>
+    &copy; 2025 Khushal Mali. All rights reserved.
   </footer>
+
 </body>
 </html>
